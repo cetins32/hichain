@@ -7,7 +7,38 @@ option go_package = "hichain/x/hichain/types";
 
 // Msg defines the Msg service.
 service Msg {
-    // this line is used by starport scaffolding # proto/tx/rpc
+      rpc CreatePost(MsgCreatePost) returns (MsgCreatePostResponse);
+// this line is used by starport scaffolding # proto/tx/rpc
+}
+
+message MsgCreatePost {
+  string creator = 1;
+  string sYSTakipNo = 2;
+  string aD = 3;
+  string sOYAD = 4;
+  string dOGUMTARIHI = 5;
+  string cINSIYET = 6;
+  string aDRESBILGISI = 7;
+  string tELEFONNUMARASI = 8;
+  string hASTATIPI = 9;
+  string mUAYENEBASLANGICTARIHI = 10;
+  string mUAYENEBITISTARIHI = 11;
+  string tANITURU = 12;
+  string iCD10 = 13;
+  string rECETETARIHI = 14;
+  string rECETENUMARASI = 15;
+  string rECETETURU = 16;
+  string hEKIMKIMLIKNUMARASI = 17;
+  string iLACBARKODU = 18;
+  string iLACADI = 19;
+  string kUTUADETI = 20;
+  string iLACKULLANIMSEKLI = 21;
+  string iLACKULLANIMSAYISI = 22;
+  string iLACKULLANIMDOZU = 23;
+  string iLACKULLANIMPERIYODU = 24;
+}
+
+message MsgCreatePostResponse {
 }
 
 // this line is used by starport scaffolding # proto/tx/message

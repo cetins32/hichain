@@ -9,6 +9,8 @@
  * ---------------------------------------------------------------
  */
 
+export type HichainMsgCreatePostResponse = object;
+
 /**
  * Params defines the parameters for the module.
  */
